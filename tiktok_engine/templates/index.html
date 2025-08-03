@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Viral Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #0f2027, #2c5364 70%, #ff0080 100%);
+            color: #fff;
+            margin: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(20,20,40,0.95);
+            box-shadow: 0 2px 16px #0008;
+            padding: 0 0 0 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        .logo svg {
+            width: 36px; height: 36px;
+        }
+        .menu {
+            display: flex;
+            gap: 24px;
+        }
+        .menu a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        .menu a:hover {
+            color: #ff0080;
+        }
+        .dashboard {
+            max-width: 1100px;
+            margin: 32px auto 0 auto;
+            padding: 0 24px 32px 24px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: linear-gradient(120deg, #232526 60%, #ff0080 120%);
+            box-shadow: 0 4px 32px #0006;
+            border-radius: 18px;
+            padding: 28px 32px;
+            flex: 1 1 260px;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 40px #ff008088;
+        }
+        .card .icon {
+            width: 36px; height: 36px; margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffd700;
+        }
+        .card-value {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .form-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .form-box {
+            background: #181a2a;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px #0005;
+            padding: 24px 28px;
+            flex: 1 1 320px;
+            min-width: 280px;
+        }
+        .form-box h2 {
+            margin-top: 0;
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+        .form-box form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .form-box input, .form-box button {
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 7px;
+            border: none;
+        }
+        .form-box input {
+            background: #23243a;
+            color: #fff;
+        }
+        .form-box button {
+            background: linear-gradient(90deg, #ffd700 60%, #ff0080 100%);
+            color: #181a2a;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .form-box button:hover {
+            background: linear-gradient(90deg, #ffec80 60%, #ff4fa0 100%);
+        }
+        .status {
+            color: #ffd700;
+            font-weight: bold;
+            margin: 18px 0 0 0;
+        }
+        .thumbnail {
+            max-width: 180px;
+            margin: 18px 0 0 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px #0007;
+        }
+        .table-section {
+            margin-top: 32px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #181a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px #0005;
+        }
+        th, td {
+            padding: 14px 10px;
+            text-align: left;
+        }
+        th {
+            background: #23243a;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+        tr:nth-child(even) { background: #23243a; }
+        tr:nth-child(odd) { background: #181a2a; }
+        @media (max-width: 900px) {
+            .dashboard, .header-content { padding: 0 8px; }
+            .cards, .form-section { flex-direction: column; gap: 18px; }
+        }
+        @media (max-width: 600px) {
+            .dashboard { padding: 0 2px; }
+            .card, .form-box { min-width: 0; padding: 16px 8px; }
+            .header-content { flex-direction: column; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#ff0080"/><path d="M32 14v12.5a5.5 5.5 0 1 1-5.5-5.5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26.5" cy="32.5" r="2.5" fill="#fff"/></svg>
+                TikTok Viral Engine
+            </div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#engajamento">Engajamento</a>
+                <a href="#contas">Contas</a>
+            </nav>
+        </div>
+    </header>
+    <main class="dashboard">
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🔄</div>
+                <div class="card-title">Status</div>
+                <div class="card-value">{{ status }}</div>
+            </div>
+            <div class="card">
+                <div class="icon">📈</div>
+                <div class="card-title">Curtidas Recentes</div>
+                <div class="card-value">{{ engagement_data|sum(attribute='likes') if engagement_data else '0' }}</div>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <div class="card-title">Comentários Recentes</div>
+                <div class="card-value">{{ engagement_data|sum(attribute='comments') if engagement_data else '0' }}</div>
+            </div>
+            <div class="card">
+                <div class="icon">👤</div>
+                <div class="card-title">Contas Ativas</div>
+                <div class="card-value">{{ accounts|length if accounts else '0' }}</div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-box">
+                <h2>Adicionar Conta</h2>
+                <form action="/add_account" method="POST">
+                    <input type="text" name="username" placeholder="E-mail" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+            <div class="form-box">
+                <h2>Iniciar Automação</h2>
+                <form action="/start" method="POST" onsubmit="return validateForm()">
+                    <input type="text" name="profile_url" placeholder="URL do Perfil TikTok" required>
+                    <input type="text" name="video_url" placeholder="URL do Vídeo (opcional)">
+                    <button type="submit">Iniciar</button>
+                </form>
+                <p class="status">Status: {{ status }}</p>
+                <img src="static/thumbnail.png" class="thumbnail" alt="Thumbnail">
+            </div>
+        </div>
+        <div class="table-section" id="engajamento">
+            <h2>Relatório de Engajamento</h2>
+            <table>
+                <tr><th>URL do Vídeo</th><th>Curtidas</th><th>Comentários</th><th>Data</th></tr>
+                {% if engagement_data %}
+                {% for item in engagement_data %}
+                <tr>
+                    <td><a href="{{ item.video_url }}" target="_blank" style="color:#ffd700;text-decoration:underline;">{{ item.video_url }}</a></td>
+                    <td>{{ item.likes }}</td>
+                    <td>{{ item.comments }}</td>
+                    <td>{{ item.timestamp }}</td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr><td colspan="4" style="color:#ffd700;text-align:center;">Nenhum dado de engajamento disponível.</td></tr>
+                {% endif %}
+            </table>
+        </div>
+        <div class="table-section" id="contas">
+            <h2>Contas Ativas</h2>
+            <table>
+                <tr><th>Usuário</th></tr>
+                {% if accounts %}
+                {% for account in accounts %}
+                <tr><td>👤 {{ account.username }}</td></tr>
+                {% endfor %}
+                {% else %}
+                <tr><td style="color:#ffd700;text-align:center;">Nenhuma conta cadastrada.</td></tr>
+                {% endif %}
+            </table>
+        </div>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>

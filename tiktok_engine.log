@@ -1,0 +1,808 @@
+2025-08-02 20:32:32,796 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 20:32:32,796 - [33mPress CTRL+C to quit[0m
+2025-08-02 20:33:01,398 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 133, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 43, in template
+    <tr><td>{{ item.video_url }}</td><td>{{ item.likes }}</td><td>{{ item.comments }}</td><td>{{ item.timestamp | int | strftime }}</td></tr>
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-02 20:33:01,403 - 127.0.0.1 - - [02/Aug/2025 20:33:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-02 20:33:01,451 - 127.0.0.1 - - [02/Aug/2025 20:33:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-02 20:34:57,757 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-02 20:34:57,757 - [33mPress CTRL+C to quit[0m
+2025-08-02 20:35:24,289 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 133, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 43, in template
+    <tr><td>{{ item.video_url }}</td><td>{{ item.likes }}</td><td>{{ item.comments }}</td><td>{{ item.timestamp | int | strftime }}</td></tr>
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-02 20:35:24,293 - 127.0.0.1 - - [02/Aug/2025 20:35:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-02 20:35:26,624 - 127.0.0.1 - - [02/Aug/2025 20:35:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-03 08:08:18,946 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 133, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 43, in template
+    <tr><td>{{ item.video_url }}</td><td>{{ item.likes }}</td><td>{{ item.comments }}</td><td>{{ item.timestamp | int | strftime }}</td></tr>
+    ^^^^^^^^^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:08:18,954 - 127.0.0.1 - - [03/Aug/2025 08:08:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:09:48,106 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 133, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:09:48,111 - 127.0.0.1 - - [03/Aug/2025 08:09:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:11:57,546 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 08:11:57,547 - [33mPress CTRL+C to quit[0m
+2025-08-03 08:12:00,895 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:12:00,900 - 127.0.0.1 - - [03/Aug/2025 08:12:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:12:01,902 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:12:01,904 - 127.0.0.1 - - [03/Aug/2025 08:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:12:02,661 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:12:02,663 - 127.0.0.1 - - [03/Aug/2025 08:12:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:12:03,383 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:12:03,386 - 127.0.0.1 - - [03/Aug/2025 08:12:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:12:04,041 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:12:04,044 - 127.0.0.1 - - [03/Aug/2025 08:12:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:33:36,075 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:33:36,081 - 127.0.0.1 - - [03/Aug/2025 08:33:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:35:02,784 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 138, in index
+    accounts = pd.read_sql_query("SELECT username FROM accounts", conn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:35:02,791 - 127.0.0.1 - - [03/Aug/2025 08:35:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:35:19,346 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 08:35:19,347 - [33mPress CTRL+C to quit[0m
+2025-08-03 08:35:37,586 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 140, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:35:37,591 - 127.0.0.1 - - [03/Aug/2025 08:35:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 08:36:44,067 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 08:36:44,067 - [33mPress CTRL+C to quit[0m
+2025-08-03 08:37:33,710 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 08:37:33,710 - [33mPress CTRL+C to quit[0m
+2025-08-03 08:37:40,003 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\tiktok_engine.py", line 140, in index
+    return render_template('index.html', status="Rodando", engagement_data=engagement_data.to_dict('records'), accounts=accounts.to_dict('records'))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\kawa2\OneDrive\Desktop\odigo de barra\tiktok_engine\templates\index.html", line 258, in template
+    <td>{{ item.timestamp | int | strftime }}</td>
+    ^^^^^
+jinja2.exceptions.TemplateAssertionError: No filter named 'strftime'.
+2025-08-03 08:37:40,012 - 127.0.0.1 - - [03/Aug/2025 08:37:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-03 09:00:47,072 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 09:00:47,072 - [33mPress CTRL+C to quit[0m
+2025-08-03 09:01:48,543 - 127.0.0.1 - - [03/Aug/2025 09:01:48] "GET / HTTP/1.1" 200 -
+2025-08-03 09:01:48,709 - 127.0.0.1 - - [03/Aug/2025 09:01:48] "GET /static/thumbnail.png HTTP/1.1" 200 -
+2025-08-03 09:01:48,711 - 127.0.0.1 - - [03/Aug/2025 09:01:48] "GET /static/script.js HTTP/1.1" 200 -
+2025-08-03 09:02:35,545 - 127.0.0.1 - - [03/Aug/2025 09:02:35] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:07,245 - 127.0.0.1 - - [03/Aug/2025 09:05:07] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:09,048 - 127.0.0.1 - - [03/Aug/2025 09:05:09] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:09,687 - 127.0.0.1 - - [03/Aug/2025 09:05:09] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:10,051 - 127.0.0.1 - - [03/Aug/2025 09:05:10] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:10,433 - 127.0.0.1 - - [03/Aug/2025 09:05:10] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:10,764 - 127.0.0.1 - - [03/Aug/2025 09:05:10] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:11,104 - 127.0.0.1 - - [03/Aug/2025 09:05:11] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:11,455 - 127.0.0.1 - - [03/Aug/2025 09:05:11] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:11,934 - 127.0.0.1 - - [03/Aug/2025 09:05:11] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:14,426 - 127.0.0.1 - - [03/Aug/2025 09:05:14] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:15,864 - 127.0.0.1 - - [03/Aug/2025 09:05:15] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:05:17,388 - 127.0.0.1 - - [03/Aug/2025 09:05:17] "POST /add_account HTTP/1.1" 200 -
+2025-08-03 09:08:22,480 - 127.0.0.1 - - [03/Aug/2025 09:08:22] "GET / HTTP/1.1" 200 -
+2025-08-03 09:08:56,811 - 127.0.0.1 - - [03/Aug/2025 09:08:56] "POST /start HTTP/1.1" 200 -
+2025-08-03 09:09:09,008 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:09:27,350 - 127.0.0.1 - - [03/Aug/2025 09:09:27] "GET / HTTP/1.1" 200 -
+2025-08-03 09:09:39,320 - 127.0.0.1 - - [03/Aug/2025 09:09:39] "POST /start HTTP/1.1" 200 -
+2025-08-03 09:09:43,810 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:12:51,400 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:13:15,365 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:16:59,190 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:17:50,297 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:20:45,330 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:21:49,619 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:25:16,725 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:25:32,131 - 127.0.0.1 - - [03/Aug/2025 09:25:32] "POST /start HTTP/1.1" 200 -
+2025-08-03 09:25:36,407 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:25:37,570 - 127.0.0.1 - - [03/Aug/2025 09:25:37] "POST /start HTTP/1.1" 200 -
+2025-08-03 09:25:42,391 - 127.0.0.1 - - [03/Aug/2025 09:25:42] "GET / HTTP/1.1" 200 -
+2025-08-03 09:25:42,425 - 127.0.0.1 - - [03/Aug/2025 09:25:42] "GET /static/thumbnail.png HTTP/1.1" 200 -
+2025-08-03 09:25:42,426 - 127.0.0.1 - - [03/Aug/2025 09:25:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-08-03 09:25:43,609 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:25:44,093 - 127.0.0.1 - - [03/Aug/2025 09:25:44] "GET / HTTP/1.1" 200 -
+2025-08-03 09:25:44,121 - 127.0.0.1 - - [03/Aug/2025 09:25:44] "[36mGET /static/thumbnail.png HTTP/1.1[0m" 304 -
+2025-08-03 09:25:44,122 - 127.0.0.1 - - [03/Aug/2025 09:25:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-08-03 09:25:48,901 - Erro no login: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-button"]"}
+  (Session info: chrome=138.0.7204.184); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6aefce415+77285]
+	GetHandleVerifier [0x0x7ff6aefce470+77376]
+	(No symbol) [0x0x7ff6aed99a6a]
+	(No symbol) [0x0x7ff6aedf0406]
+	(No symbol) [0x0x7ff6aedf06bc]
+	(No symbol) [0x0x7ff6aee43ac7]
+	(No symbol) [0x0x7ff6aee1864f]
+	(No symbol) [0x0x7ff6aee4087f]
+	(No symbol) [0x0x7ff6aee183e3]
+	(No symbol) [0x0x7ff6aede1521]
+	(No symbol) [0x0x7ff6aede22b3]
+	GetHandleVerifier [0x0x7ff6af2b1efd+3107021]
+	GetHandleVerifier [0x0x7ff6af2ac29d+3083373]
+	GetHandleVerifier [0x0x7ff6af2cbedd+3213485]
+	GetHandleVerifier [0x0x7ff6aefe884e+184862]
+	GetHandleVerifier [0x0x7ff6aeff055f+216879]
+	GetHandleVerifier [0x0x7ff6aefd7084+113236]
+	GetHandleVerifier [0x0x7ff6aefd7239+113673]
+	GetHandleVerifier [0x0x7ff6aefbe298+11368]
+	BaseThreadInitThunk [0x0x7ffb04dfe8d7+23]
+	RtlUserThreadStart [0x0x7ffb05ffc34c+44]
+
+2025-08-03 09:28:45,368 - 127.0.0.1 - - [03/Aug/2025 09:28:45] "GET / HTTP/1.1" 200 -
